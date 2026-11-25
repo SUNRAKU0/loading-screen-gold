@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// A loading bar only lies when it has already seen the worst of your code.
 const line = 'Tip: the loading bar is not stuck. It is thinking about everything you did wrong, one file at a time.';
 
 mkdirSync(outDir, { recursive: true });
